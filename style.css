@@ -78,3 +78,18 @@ table tr td:last-child {
 .player-inactive {
     opacity: 0.5;
 }
+
+.winning-line {
+    height: 10px;
+    width: 350px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    transform: scaleX(0.0);
+    transform: scaleY(0.0);
+    transition: transform 225ms ease-in-out;
+}
+
+.make-vertikal {
+    transform: rotate(90deg);
+    transform: scaleX(0.0);
+}
