@@ -87,9 +87,32 @@ table tr td:last-child {
     transform: scaleX(0.0);
     transform: scaleY(0.0);
     transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 
 .make-vertikal {
     transform: rotate(90deg);
     transform: scaleX(0.0);
+}
+
+.gameOver {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 550px;
+    z-index: 2;
+    animation: zoomIn 225ms ease-in-out;
+}
+
+@keyframes zoomIn {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
